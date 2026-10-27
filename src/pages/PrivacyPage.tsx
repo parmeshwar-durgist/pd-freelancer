@@ -3,10 +3,16 @@ import { SectionHeading } from '../components/ui/SectionHeading';
 import { Badge } from '../components/ui/Badge';
 import { ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { SEO } from '../components/common/SEO';
 
 export const PrivacyPage: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-8">
+      <SEO
+        title="Privacy Policy | PD Freelancer — Parmeshwar Durgist"
+        description="Privacy policy and data protection practices for PD Freelancer (Parmeshwar Durgist). We treat client data, proposals, and proprietary code with complete confidentiality."
+        keywords="Privacy Policy, PD Freelancer Privacy, Data Protection, Parmeshwar Durgist"
+      />
       <div className="text-center space-y-3">
         <Badge variant="brand" size="md">
           Legal & Privacy

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pdtechnologies.dev/sitemap.xml
+Sitemap: https://pd-freelancer.vercel.app/sitemap.xml

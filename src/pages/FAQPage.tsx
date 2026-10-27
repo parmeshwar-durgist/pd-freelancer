@@ -6,6 +6,7 @@ import { Badge } from '../components/ui/Badge';
 import { Button } from '../components/ui/Button';
 import { HelpCircle, ArrowRight, MessageSquare, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { SEO } from '../components/common/SEO';
 
 const categories = ['All', 'General', 'Process', 'Pricing & Terms', 'Technical'] as const;
 
@@ -17,8 +18,27 @@ export const FAQPage: React.FC = () => {
       ? faqsData
       : faqsData.filter((item) => item.category === selectedCategory);
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqsData.slice(0, 8).map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
+  };
+
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-12 sm:space-y-16">
+      <SEO
+        title="Frequently Asked Questions (FAQ) | PD Freelancer — Parmeshwar Durgist"
+        description="Find answers to common questions about working with Parmeshwar Durgist: pricing, timelines, source code ownership, tech stack, and post-launch maintenance."
+        keywords="Web Development FAQ, Freelance Developer Questions, Code Ownership, Payment Terms, Parmeshwar Durgist, PD Freelancer"
+        schema={faqSchema}
+      />
       {/* Header */}
       <div className="text-center space-y-4">
         <Badge variant="brand" size="md">

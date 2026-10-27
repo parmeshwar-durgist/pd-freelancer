@@ -37,11 +37,16 @@ const iconMap: Record<string, React.ElementType> = {
   Zap,
   Lightbulb,
   Share2,
-};
+import { SEO } from '../components/common/SEO';
 
 export const ServicesPage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-16 sm:space-y-20">
+      <SEO
+        title="Web & Software Development Services | PD Freelancer — Parmeshwar Durgist"
+        description="Explore 13 turnkey software services by Parmeshwar Durgist: custom web applications, e-commerce stores, Android/iOS mobile apps, manufacturing ERP, billing POS, MVP development, and cloud REST APIs."
+        keywords="Web Development Services, Custom Web Applications, E-Commerce Development, Mobile App Development, Android Java, React Native, REST API Development, ERP Software, POS Billing System, Parmeshwar Durgist, PD Freelancer"
+      />
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto space-y-4">
         <Badge variant="brand" size="md">

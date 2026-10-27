@@ -12,10 +12,16 @@ import {
   Github,
   Phone
 } from 'lucide-react';
+import { SEO } from '../components/common/SEO';
 
 export const ContactPage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-12 sm:space-y-16">
+      <SEO
+        title="Contact Parmeshwar Durgist | Hire Full-Stack Developer — PD Freelancer"
+        description="Ready to build your web app, e-commerce store, or custom software? Contact Parmeshwar Durgist directly via WhatsApp (+91 9657847967), email (pd.softwaredeveloper@gmail.com), or project inquiry form."
+        keywords="Contact Parmeshwar Durgist, Hire Full Stack Developer, Hire Freelance Web Developer, PD Freelancer Contact, Software Consultation WhatsApp"
+      />
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto space-y-4">
         <Badge variant="brand" size="md">

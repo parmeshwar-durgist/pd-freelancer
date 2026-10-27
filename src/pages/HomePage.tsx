@@ -27,6 +27,8 @@ import { projectsData } from '../data/projects';
 import { servicesData } from '../data/services';
 import { faqsData } from '../data/faqs';
 
+import { SEO } from '../components/common/SEO';
+
 export const HomePage: React.FC = () => {
   const featuredProjects = projectsData.filter((p) => p.isFeatured);
   const homeServices = servicesData.slice(0, 6);
@@ -34,6 +36,11 @@ export const HomePage: React.FC = () => {
 
   return (
     <div className="space-y-24 sm:space-y-32">
+      <SEO
+        title="Parmeshwar Durgist | PD Freelancer — Freelance Software Engineer & Full-Stack Developer"
+        description="I’m Parmeshwar Durgist, a Freelance Software Engineer at PD Freelancer. I build custom software, web applications, Android & iOS apps, and AI-powered automation to help businesses grow with innovative digital solutions."
+        keywords="Parmeshwar Durgist, PD Freelancer, Freelance Software Engineer, Full Stack Developer, React.js Developer, Node.js Developer, Android App Developer, React Native, Custom Web Applications, E-Commerce Developer, REST API Developer, Software Engineer India, Hire Freelance Developer"
+      />
       {/* ========================================================
           HERO SECTION
       ======================================================== */}

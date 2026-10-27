@@ -5,10 +5,16 @@ import { Button } from '../components/ui/Button';
 import { ProcessTimeline } from '../components/ui/ProcessTimeline';
 import { ArrowRight, ShieldCheck, Clock, CheckCircle2, FileText, Lock } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { SEO } from '../components/common/SEO';
 
 export const ProcessPage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-16 sm:space-y-20">
+      <SEO
+        title="Development Process & Methodology | PD Freelancer — Parmeshwar Durgist"
+        description="Discover our 6-stage milestone development process: Discovery, UI/UX Wireframing, Full-Stack Architecture, Cross-Device QA, Production Go-Live, and 30 Days Free Warranty."
+        keywords="Software Development Process, Agile Milestones, Web Development Workflow, Parmeshwar Durgist, PD Freelancer, Transparent Client Communication"
+      />
       {/* Page Header */}
       <div className="text-center max-w-3xl mx-auto space-y-4">
         <Badge variant="brand" size="md">

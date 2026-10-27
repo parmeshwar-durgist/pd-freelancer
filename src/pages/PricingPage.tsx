@@ -6,10 +6,16 @@ import { Badge } from '../components/ui/Badge';
 import { Button } from '../components/ui/Button';
 import { ShieldCheck, ArrowRight, HelpCircle, FileText, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { SEO } from '../components/common/SEO';
 
 export const PricingPage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-16 sm:space-y-20">
+      <SEO
+        title="Transparent Web & Software Pricing | PD Freelancer — Parmeshwar Durgist"
+        description="Clear, scope-based project pricing with zero hidden fees. Landing pages, corporate portals, e-commerce stores, and custom web applications with 100% source code ownership."
+        keywords="Web Development Pricing, Software Development Cost, Freelance Developer Rates India, Transparent Web Design Packages, Parmeshwar Durgist, PD Freelancer"
+      />
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto space-y-4">
         <Badge variant="brand" size="md">

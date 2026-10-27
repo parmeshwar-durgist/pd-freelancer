@@ -27,6 +27,8 @@ import { Badge } from '../components/ui/Badge';
 import { Button } from '../components/ui/Button';
 import { skillsData } from '../data/skills';
 
+import { SEO } from '../components/common/SEO';
+
 const coreExpertise = [
   'Full-Stack Development',
   'React.js',
@@ -41,6 +43,11 @@ const coreExpertise = [
 export const AboutPage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-20 sm:space-y-24">
+      <SEO
+        title="About Parmeshwar Durgist — Freelance Software Engineer & Full-Stack Developer | PD Freelancer"
+        description="Learn about Parmeshwar Durgist, founder of PD Freelancer. With 2+ years of production experience, he engineers scalable web applications, mobile apps, and robust cloud APIs with 100% direct client communication."
+        keywords="About Parmeshwar Durgist, PD Freelancer, Full-Stack Developer India, Freelance Software Engineer, React Developer, Node.js Expert, Android Java Developer, Web Engineering Consultant"
+      />
       {/* ========================================================
           HERO & BIOGRAPHY SECTION
       ======================================================== */}

@@ -13,8 +13,8 @@ import {
   Sparkles,
   Layers,
   ArrowRight,
-  ShieldCheck
-} from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
+import { SEO } from '../components/common/SEO';
 
 export const CaseStudyPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -30,6 +30,13 @@ export const CaseStudyPage: React.FC = () => {
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-12 sm:space-y-16">
+      <SEO
+        title={`${project.title} — Case Study & Architecture | PD Freelancer`}
+        description={`${project.description} Engineered by Parmeshwar Durgist using ${project.tags.join(', ')}.`}
+        keywords={`${project.title}, ${project.tags.join(', ')}, ${project.category}, Parmeshwar Durgist, Case Study, Full Stack Web Architecture`}
+        ogImage={project.thumbnail}
+        ogType="article"
+      />
       {/* Top Breadcrumb & Back Link */}
       <div className="flex items-center justify-between">
         <Link

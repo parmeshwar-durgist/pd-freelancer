@@ -4,6 +4,7 @@ import { ProjectCategory } from '../types';
 import { ProjectCard } from '../components/ui/ProjectCard';
 import { Badge } from '../components/ui/Badge';
 import { Button } from '../components/ui/Button';
+import { SEO } from '../components/common/SEO';
 import {
   ExternalLink,
   Github,
@@ -84,6 +85,11 @@ export const PortfolioPage: React.FC = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-16">
+      <SEO
+        title="Project Portfolio & Case Studies | PD Freelancer — Parmeshwar Durgist"
+        description="Browse 12 verified software engineering projects and case studies by Parmeshwar Durgist: Manyyata Foods (Gooseberry), ASK Compaire, Manisha Infracon, Karale Club House, Manufacturing ERP, and Mobile Billing POS."
+        keywords="Parmeshwar Durgist Portfolio, PD Freelancer Projects, Web Developer Case Studies, React Projects, Full Stack Portfolio, Live Web Deployments, ERP Case Study, Android App Portfolio"
+      />
       {/* Hero Header Section */}
       <div className="relative text-center max-w-4xl mx-auto space-y-6">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-600 dark:text-brand-400 text-xs font-bold tracking-wide uppercase shadow-sm">

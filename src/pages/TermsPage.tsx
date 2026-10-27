@@ -2,10 +2,16 @@ import React from 'react';
 import { Badge } from '../components/ui/Badge';
 import { ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { SEO } from '../components/common/SEO';
 
 export const TermsPage: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-8">
+      <SEO
+        title="Terms of Engagement & Service | PD Freelancer — Parmeshwar Durgist"
+        description="Standard terms of engagement for client software projects with PD Freelancer (Parmeshwar Durgist). Milestone delivery, 100% intellectual property ownership, and 30-day bug warranty."
+        keywords="Terms of Engagement, Software Contract, Code Ownership Guarantee, PD Freelancer Terms, Parmeshwar Durgist"
+      />
       <div className="text-center space-y-3">
         <Badge variant="brand" size="md">
           Client Engagement
