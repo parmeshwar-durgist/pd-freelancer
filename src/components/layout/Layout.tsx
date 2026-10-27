@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
+import { ChatbotWidget } from '../chat/ChatbotWidget';
 import { MessageSquare, ArrowUp } from 'lucide-react';
 
 interface LayoutProps {
@@ -26,6 +27,9 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Navbar />
       <main className="flex-grow">{children}</main>
       <Footer />
+
+      {/* AI Assistant Chatbot */}
+      <ChatbotWidget />
 
       {/* Floating Action Elements (WhatsApp + Scroll To Top) */}
       <div className="fixed bottom-6 right-6 z-40 flex flex-col items-center gap-3">

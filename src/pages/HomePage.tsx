@@ -37,16 +37,16 @@ export const HomePage: React.FC = () => {
       {/* ========================================================
           HERO SECTION
       ======================================================== */}
-      <section className="relative pt-12 sm:pt-20 pb-8 overflow-hidden">
+      <section className="relative min-h-[calc(100vh-5rem)] flex items-center justify-center py-6 sm:py-8 lg:py-10 overflow-hidden">
         {/* Ambient background glows */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-gradient-to-tr from-brand-600/15 via-accent-cyan/15 to-transparent blur-3xl pointer-events-none rounded-full" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-gradient-to-tr from-brand-600/15 via-accent-cyan/15 to-transparent blur-3xl pointer-events-none rounded-full" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
             {/* Left Content Column */}
-            <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left">
+            <div className="lg:col-span-6 space-y-4 sm:space-y-5 text-center lg:text-left flex flex-col justify-center">
               {/* Profile Intro Pill with Actual Photo */}
-              <div className="inline-flex items-center gap-3 p-1.5 pr-4 rounded-full bg-white/80 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 shadow-md">
+              <div className="inline-flex items-center gap-3 p-1.5 pr-4 rounded-full bg-white/80 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 shadow-sm w-fit mx-auto lg:mx-0">
                 <img
                   src="/parmeshwar-durgist.jpg"
                   alt="Parmeshwar Durgist"
@@ -64,18 +64,18 @@ export const HomePage: React.FC = () => {
               </div>
 
               {/* Main Headline */}
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.12]">
+              <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] xl:text-5xl font-black tracking-tight text-slate-900 dark:text-white leading-[1.14]">
                 Turning Ideas Into{' '}
                 <span className="gradient-text">Powerful Digital Products.</span>
               </h1>
 
               {/* Persona / Value Proposition Subheading */}
-              <p className="text-base sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                I’m <span className="font-semibold text-slate-900 dark:text-white">Parmeshwar Durgist</span>, a Freelance Software Engineer & Full-Stack Developer at <span className="font-semibold text-brand-600 dark:text-brand-400">PD Freelancer</span>. I help ambitious businesses build high-performance websites, scalable web applications, e-commerce systems, and robust APIs.
+              <p className="text-sm sm:text-base lg:text-[1.05rem] text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                I’m <strong className="font-bold text-slate-900 dark:text-white">Parmeshwar Durgist</strong>, a Freelance Software Engineer at <strong className="font-bold text-brand-600 dark:text-brand-400">PD Freelancer</strong>. I build custom software, web applications, Android & iOS apps, and AI-powered automation to help businesses grow with innovative digital solutions.
               </p>
 
               {/* Action CTAs */}
-              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-1">
                 <Button
                   to="/contact"
                   variant="primary"
@@ -95,37 +95,37 @@ export const HomePage: React.FC = () => {
                 </Button>
               </div>
 
-              {/* Real Value Pillars */}
-              <div className="pt-6 grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-slate-200 dark:border-slate-800 text-left">
+              {/* Real Value Pillars (Clean 3-column layout) */}
+              <div className="pt-4 grid grid-cols-3 gap-3 border-t border-slate-200 dark:border-slate-800 text-left">
                 <div>
-                  <span className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white block">
+                  <span className="text-lg sm:text-2xl font-black text-slate-900 dark:text-white block">
                     2+ Years
                   </span>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">
-                    Production Software Experience
+                  <span className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 leading-tight block">
+                    Production Experience
                   </span>
                 </div>
                 <div>
-                  <span className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white block">
+                  <span className="text-lg sm:text-2xl font-black text-slate-900 dark:text-white block">
                     Full-Stack
                   </span>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">
-                    React, Node.js, DBs & APIs
+                  <span className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 leading-tight block">
+                    React, Node.js & DBs
                   </span>
                 </div>
-                <div className="col-span-2 sm:col-span-1">
-                  <span className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white block">
+                <div>
+                  <span className="text-lg sm:text-2xl font-black text-slate-900 dark:text-white block">
                     100% Direct
                   </span>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">
-                    Zero Middlemen • Code Ownership
+                  <span className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 leading-tight block">
+                    Zero Middlemen
                   </span>
                 </div>
               </div>
             </div>
 
             {/* Right Interactive Hero Element: CodeWindow */}
-            <div className="lg:col-span-5 relative">
+            <div className="lg:col-span-6 relative w-full flex items-center justify-center">
               <CodeWindow />
             </div>
           </div>
@@ -133,28 +133,85 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* ========================================================
-          TRUST & VERIFIED STACK BANNER
+          TRUST & VERIFIED STACK BANNER (Tech Stack + Client Handling & Experience)
       ======================================================== */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="p-6 sm:p-8 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="text-center md:text-left">
-            <span className="text-xs font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400 block mb-1">
-              Engineered With Modern Standards
+        <div className="p-6 sm:p-8 rounded-3xl glass-card border border-slate-200 dark:border-slate-800 space-y-6">
+          {/* Header Row */}
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-200/80 dark:border-slate-800">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400 block mb-1">
+                Engineered With Modern Standards
+              </span>
+              <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
+                Full-Stack Tech Stack & Professional Client Delivery
+              </h2>
+            </div>
+            <span className="text-xs font-semibold px-3 py-1.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/25 w-fit flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              2+ Years Experience • Direct Client Handling
             </span>
-            <p className="text-sm font-semibold text-slate-900 dark:text-white">
-              Strict TypeScript • Sub-Second Latency • Clean Git Version Control
-            </p>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
-            {['React.js', 'Node.js', 'TypeScript', 'MongoDB', 'MySQL', 'Tailwind CSS', 'Docker'].map((tech) => (
-              <span
-                key={tech}
-                className="text-xs font-semibold px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/80 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700/60"
-              >
-                {tech}
-              </span>
-            ))}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            {/* Tech Stack & Cloud Infrastructure */}
+            <div className="lg:col-span-7 space-y-2.5">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                <Cpu className="w-3.5 h-3.5 text-brand-500" />
+                <span>Core Technologies & Cloud Hosting</span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  'React.js',
+                  'Node.js',
+                  'Express.js',
+                  'MongoDB',
+                  'MySQL',
+                  'Android Java',
+                  'Java',
+                  'React Native',
+                  'Docker',
+                  'Git & GitHub',
+                  'CI/CD Pipeline',
+                  'AWS',
+                  'Hostinger',
+                  'Deployment'
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="text-xs font-medium px-3 py-1.5 rounded-lg bg-slate-100/90 dark:bg-slate-800/80 hover:bg-white dark:hover:bg-slate-700/80 text-slate-800 dark:text-slate-200 border border-slate-200/80 dark:border-slate-700/60 transition-all hover:scale-105 hover:border-brand-500/50 hover:text-brand-600 dark:hover:text-brand-400 shadow-sm cursor-default"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Experience Level & Client Handling Skills */}
+            <div className="lg:col-span-5 space-y-2.5 lg:border-l lg:border-slate-200/80 lg:dark:border-slate-800 lg:pl-6">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                <Users className="w-3.5 h-3.5 text-emerald-500" />
+                <span>Client Handling & Experience Skills</span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  'Direct Client Handling & Consulting',
+                  'End-to-End Project Ownership',
+                  'Requirement Gathering & MVP Scoping',
+                  'Agile Milestone Delivery (2-4 Weeks)',
+                  'Sub-Second Performance Optimization',
+                  'Clean Architecture & Scalability',
+                  'Zero Middlemen (100% Direct)'
+                ].map((skill) => (
+                  <span
+                    key={skill}
+                    className="text-xs font-semibold px-3 py-1.5 rounded-lg bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/25 transition-all hover:scale-105 hover:bg-emerald-500/15 shadow-sm cursor-default"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
