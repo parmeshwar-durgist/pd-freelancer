@@ -23,6 +23,7 @@ import {
   Lightbulb,
   Share2
 } from 'lucide-react';
+import { SEO } from '../components/common/SEO';
 
 const iconMap: Record<string, React.ElementType> = {
   Globe,
@@ -37,7 +38,7 @@ const iconMap: Record<string, React.ElementType> = {
   Zap,
   Lightbulb,
   Share2,
-import { SEO } from '../components/common/SEO';
+};
 
 export const ServicesPage: React.FC = () => {
   return (
